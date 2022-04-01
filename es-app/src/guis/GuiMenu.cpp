@@ -1273,7 +1273,7 @@ void GuiMenu::openSystemSettings_batocera()
         bool rotateRootPassEnabled = SystemConf::getInstance()->getBool("rotate.root.password");
         auto rotate_root_pass = std::make_shared<SwitchComponent>(mWindow);
         rotate_root_pass->setState(rotateRootPassEnabled);
-        s->addWithLabel(_("ROTATE ROOT PASSWORD"), rotate_root_pass);
+        s->addWithLabel(_("ROTATE ROOT PASSWORDsss"), rotate_root_pass);
 
         auto root_password = std::make_shared<TextComponent>(mWindow, SystemConf::getInstance()->get("root.password"), ThemeData::getMenuTheme()->Text.font, ThemeData::getMenuTheme()->Text.color);
         if (SystemConf::getInstance()->getBool("rotate.root.password", true)) {
